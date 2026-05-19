@@ -1,8 +1,8 @@
-# Predicting Multifunctional Properties of (K,Na)NbO3-Based Lead-Free Ceramics for Optimized Materials Design
+# Machine Learning-Driven Prediction and Optimization of Energy Storage Performance in Lead-Free Relaxor Ferroelectric Ceramics
 
 ## 1\. Project Description
 
-This is an example implementation of six predictive machine learning models used to estimate the multifunctional properties of (K,Na)NbO3-based lead-free ceramics for optimized materials design. The models implement an extensive database of 309 experimental samples and 24 input features, collected from 53 experimental campaigns available in the literature. The models included in this repository are:
+This is an example implementation of six predictive machine learning models used to estimate the multifunctional properties of BaTiO3-based lead-free ceramics for optimized materials design. The models implement an extensive database of 280 experimental samples and 32 input features, collected from 53 experimental campaigns available in the literature. The models included in this repository are:
 
 * Linear Regression (LR)
 * Support Vector Regression (SVR)
@@ -13,7 +13,7 @@ This is an example implementation of six predictive machine learning models used
 
 ## 2\. Database
 
-The code presented in this repository focuses on the prediction of the Dielectric constant, piezoelectric charge coefficient, and Curie temperature. The complete database is available open-source at: "Dataset.xlsx" file within this repository.
+The code presented in this repository focuses on the prediction of the recoverable energy density (Wrec) and energy storage efficiency (η). The complete database is available open-source at: "Dataset BaTiO3.xlsx" file within this repository.
 
 ## 3\. Model Training
 
@@ -34,14 +34,14 @@ Follow the instructions below to execute the script and build the models:
 
 ## 5\. Code Structure
 
-The d33-εr-Tc.py file is organized in the following format:
+The Wrec_Neta.py file is organized in the following format:
 
 * Data Preparation.
 * Model building, repeated K-fold cross-validation, and predictions.
 * Model performance and error evaluation.
 * Hyperparameter optimization.
 
-The Database.xlsx file is always required to execute the d33-εr-Tc.py file.
+The Dataset BaTiO3.xlsx file is always required to execute the Wrec_Neta.py file.
 
 ## 6\. Dependencies
 
